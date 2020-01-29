@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>MainWindow</class>
+  <widget class="QMainWindow" name="MainWindow">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>777</width>
+        <height>474</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Clean</string>
+    </property>
+    <widget class="QWidget" name="centralWidget">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+              <widget class="QComboBox" name="comboBox">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="AqcuireInitialPosition">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="text">
+                  <string>Abschlagposition Erfassen</string>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="AqcuireTargetPosition">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="text">
+                  <string>Zielrichtung Erfassen</string>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="AqcuireCurrentBallPosition">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="text">
+                  <string>Ballposition erfassen</string>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <widget class="QPushButton" name="FinishedHole">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="text">
+                  <string>Loch Beendet</string>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </item>
+        <item>
+          <widget class="QTextBrowser" name="textBrowser"/>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <layoutdefault spacing="6" margin="11"/>
+  <resources/>
+  <connections/>
+  <slots>
+    <slot>ButtonClicked()</slot>
+  </slots>
+</ui>

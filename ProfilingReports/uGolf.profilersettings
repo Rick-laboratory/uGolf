@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<SysprogsProfilerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Linux>
+    <Mode>ProfileWithoutDebugging</Mode>
+    <SeparateCallers>0</SeparateCallers>
+    <GDBPort>2000</GDBPort>
+  </Linux>
+  <SessionFileDirectory>C:\projects\uGolf\ProfilingReports\uGolf</SessionFileDirectory>
+  <SessionName>22.01.2020 13:47:14</SessionName>
+</SysprogsProfilerSettings>
