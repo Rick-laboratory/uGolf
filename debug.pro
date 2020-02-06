@@ -6,8 +6,8 @@ DESTDIR = Debug
 CONFIG += debug
 
 DEFINES += 
-LIBS += -lboost_system
+LIBS += 
 INCLUDEPATH += 
 QMAKE_LFLAGS += 
-QMAKE_CXXFLAGS += -std=gnu++1z -ggdb -lboost_system 
-QMAKE_CFLAGS += -std=gnu++1z -ggdb -lboost_system 
+QMAKE_CXXFLAGS += -std=gnu++1z -ggdb 
+QMAKE_CFLAGS += -std=gnu++1z -ggdb 

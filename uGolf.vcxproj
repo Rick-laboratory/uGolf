@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{5DECAED3-4B91-4E10-A5E6-278487510D30}</ProjectGuid>
+    <ProjectGuid>{5E3B2BA2-A6E7-4D46-922C-826B3FBA0C37}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -44,8 +44,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\linux-g++;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtWidgets;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtGui;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtSerialPort;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtCore;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\c++\8\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>.;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0003\linux-g++;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5\QtWidgets;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5\QtGui;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5\QtCore;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\c++\8\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0006\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0005\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include;Debug;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
@@ -53,10 +54,9 @@
     <IncludePath />
     <ReferencePath />
     <LibraryPath />
-    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <NMakeIncludeSearchPath>.;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\linux-g++;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtWidgets;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtGui;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\qt5\QtCore;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\c++\8\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0000\include;Release;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>.;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0003\linux-g++;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5\QtWidgets;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5\QtGui;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\qt5\QtCore;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf\c++\8;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\c++\8\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0006\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0005\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.3.2\0001\include;Release;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
@@ -76,10 +76,11 @@
   </ImportGroup>
   <ItemGroup>
     <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="Filter.cpp" />
     <ClCompile Include="SerialManager.cpp" />
     <ClCompile Include="uGolf.cpp" />
     <ClCompile Include="MainWindow.cpp" />
-    <ClInclude Include="blocking_reader.h" />
+    <ClInclude Include="Filter.h" />
     <ClInclude Include="SerialManager.h" />
     <None Include="MainWindow.ui" />
     <ClInclude Include="DataManager.h" />

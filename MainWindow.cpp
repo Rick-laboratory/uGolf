@@ -1,6 +1,6 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
-
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
 	: QMainWindow(parent)
@@ -23,8 +23,14 @@ MainWindow::MainWindow(QWidget *parent)
 	ui->comboBox->addItem("W5");
 	ui->comboBox->addItem("D10,5");
 	ui->comboBox->addItem("D12,5");
-	
-	
+	ui->FinishedHole->setEnabled(false);
+	if (fexists("Ref.Source"))
+	{
+		ReferenceCount = DataManagerObject.IntParseReferenceFile("Ref.Source");
+	}else
+	{
+		DataManagerObject.SaveReferenceFirst(ReferenceCount);
+	}
 }
 
 MainWindow::~MainWindow()
@@ -33,34 +39,70 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_AqcuireInitialPosition_clicked()
-{
-	char Buffer = { 0 };
-	std::string tmp;
-	if (!Serial::uart_open("/dev/ttyS0", B9600, 0)) 
-		std::cout << "error";
-	
-	while (true)
-	{
-		Serial::uart_read(&Buffer, 60);
-		std::cout << Buffer << std::flush;
-	}
+{	
+	ui->AqcuireInitialPosition->setEnabled(false);
+	TempGPS = FilterObject.return_GNGLL();
+	TempQstr = QString::fromStdString(TempGPS);
+	ui->textBrowser->append(TempQstr);
+	setReferenceUp();
+	setIndexUp();
+	DataManagerObject.SaveData("#Initial", ReferenceCount, IndexCount, TempGPS, ui->comboBox->currentText());
 }
 
 void MainWindow::on_AqcuireTargetPosition_clicked()
 {
-	//defines a constant path for the data Index Reference Storage
-	char const * const path = "data.IRS";
-	DataManagerObject.RemoveLine(path, 1);
+	ui->AqcuireTargetPosition->setEnabled(false);
+	ui->FinishedHole->setEnabled(true);
+	TempGPS = FilterObject.return_GNGLL();
+	TempFinish = TempGPS;
+	TempQstr = QString::fromStdString(TempGPS);
+	ui->textBrowser->append(TempQstr);
+	setIndexUp();
+	DataManagerObject.SaveData("#Target", ReferenceCount, IndexCount, TempGPS, ui->comboBox->currentText());
 }
 
 void MainWindow::on_AqcuireCurrentBallPosition_clicked()
 {
-	// initialises a Struct with index and reference data
-	StringData data = DataManagerObject.ParseReferenceFile("data.IRS");
-	qDebug() << QString::fromStdString(data.IndexSource) + " " + QString::fromStdString(data.ReferenceSource);
+	ui->AqcuireCurrentBallPosition->setEnabled(false);
+	TempGPS = FilterObject.return_GNGLL();
+	TempQstr = QString::fromStdString(TempGPS);
+	ui->textBrowser->append(TempQstr);
+	setIndexUp();
+	DataManagerObject.SaveData("#Followup", ReferenceCount, IndexCount, TempGPS, ui->comboBox->currentText());
+	ui->AqcuireCurrentBallPosition->setEnabled(true);
 }
 
 void MainWindow::on_FinishedHole_clicked()
 {
-	DataManagerObject.SaveData();
+	ui->FinishedHole->setEnabled(false);
+	ui->textBrowser->append("Finished");
+	setIndexUp();
+	DataManagerObject.SaveData("#Finished", ReferenceCount, IndexCount, TempFinish, ui->comboBox->currentText());
+	char const * const path = "Ref.Source";
+	DataManagerObject.RemoveLine(path, 2);
+	DataManagerObject.SaveReference(ReferenceCount);
+	ui->AqcuireInitialPosition->setEnabled(true);
+	ui->AqcuireTargetPosition->setEnabled(true);
+	ui->FinishedHole->setEnabled(true);
+	IndexCount = 0;
+}
+
+void MainWindow::setIndexUp()
+{
+	IndexCount++;
+}
+
+int MainWindow::getIndexCount()
+{
+	return IndexCount;
+}
+
+void MainWindow::setReferenceUp()
+{
+	ReferenceCount++;
+}
+
+int MainWindow::getReferenceCount()
+{
+	return ReferenceCount;
 }

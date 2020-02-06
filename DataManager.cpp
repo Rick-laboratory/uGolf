@@ -8,6 +8,25 @@ DataManager::~DataManager()
 {
 }
 
+int DataManager::IntParseReferenceFile(char const * const SourceFile)
+{
+	std::ifstream stream(SourceFile);
+	std::string line;
+	std::stringstream ss;
+	int iRefCount;
+	while (getline(stream,line))
+	{
+		if (line.find("#Reference") != std::string::npos)
+		{
+		}
+		else
+		{
+			iRefCount = std::stoi(line);
+		}
+	}
+	return iRefCount;
+}
+
 StringData DataManager::ParseReferenceFile(char const* const SourceFile)
 {
 	std::ifstream stream(SourceFile);
@@ -83,11 +102,32 @@ void DataManager::RemoveLine(char const* const SourceFile, const int Line)
 }
 
 
-void DataManager::SaveData()
+
+void DataManager::SaveData(std::string type, int ref, int index,std::string gps,QString combobox)
 {
+	std::string temp = combobox.toUtf8().constData();
 	std::ostringstream StringStream;
-	StringStream << "#InitData Index\n" << "13\n" << "#InitData Reference\n" << "15\n";
-	std::fstream H_target("data.IRS", std::ios::app);  //appends data into the data.IRS file
+	StringStream << "#Reference\n" << ref << "\n" << "#Index\n" << index << "\n" << type << "\n" << gps << "#Club\n" << temp << "\n";
+	std::fstream H_target("Dat.Source", std::ios::app);   //appends data into the data.IRS file
 	H_target << StringStream.str();
 	H_target.close();
+}
+
+
+void DataManager::SaveReference(int ReferenceCount)
+{
+	std::ostringstream oss;
+	oss << ReferenceCount;
+	std::fstream SourceFile("Ref.Source", std::ios::app);
+	SourceFile << oss.str();
+	SourceFile.close();
+}
+
+void DataManager::SaveReferenceFirst(int ReferenceCount)
+{
+	std::ostringstream oss;
+	oss << "#Reference\n"<< ReferenceCount;
+	std::fstream SourceFile("Ref.Source", std::ios::app);
+	SourceFile << oss.str();
+	SourceFile.close();
 }

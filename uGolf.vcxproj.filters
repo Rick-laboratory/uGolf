@@ -2,22 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source files">
-      <UniqueIdentifier>{d8b96676-c7df-45a3-ada2-002e536f0fc4}</UniqueIdentifier>
+      <UniqueIdentifier>{0284ccc8-9548-4d06-8cfa-9559b221f493}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header files">
-      <UniqueIdentifier>{e948ff88-74e5-4c96-9f7b-c9a6cf869c72}</UniqueIdentifier>
+      <UniqueIdentifier>{b70004b7-4b9b-461a-9780-25de15c843eb}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource files">
-      <UniqueIdentifier>{e8fe6866-f742-44cb-a195-41272a5c9fe4}</UniqueIdentifier>
+      <UniqueIdentifier>{75057520-f5ac-4c1e-b819-66c23d83099b}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="QMake Project files">
-      <UniqueIdentifier>{3e0d87de-0753-4aa1-a9ee-dc7a30187f0b}</UniqueIdentifier>
+      <UniqueIdentifier>{5e53541c-f924-4945-b524-8358cf40c0cc}</UniqueIdentifier>
     </Filter>
     <Filter Include="VisualGDB settings">
-      <UniqueIdentifier>{c5280487-2557-43d3-bc03-885fda7e7839}</UniqueIdentifier>
+      <UniqueIdentifier>{7c6f7d01-ef0b-46f6-94b3-ff16d8d16717}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +51,9 @@
     <ClCompile Include="SerialManager.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="uGolf.pro" />
@@ -62,7 +65,7 @@
     <ClInclude Include="SerialManager.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="blocking_reader.h">
+    <ClInclude Include="Filter.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

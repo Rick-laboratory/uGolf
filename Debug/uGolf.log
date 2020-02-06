@@ -1,9 +1,12 @@
-﻿  SSH: Connecting...
-  SSH: Handshaking...
-  SSH: Checking key...
-  SSH: Authenticating...
-  VisualGDB: C:\projects\uGolf => /tmp/VisualGDB/c/projects/uGolf: 17 files are up-to-date.
+﻿  VisualGDB: c:\projects\uGolf => /tmp/VisualGDB/c/projects/uGolf: 1 files copied (2980 bytes), 17 files are up-to-date.
   VisualGDB: Run "qtchooser -run-tool=qmake -qt=qt5 uGolf.pro CONFIGNAME=Debug" in directory "/tmp/VisualGDB/c/projects/uGolf" on pi@192.168.3.2 (SSH)
   VisualGDB: Run "make " in directory "/tmp/VisualGDB/c/projects/uGolf" on pi@192.168.3.2 (SSH)
-  make: F�r das Ziel "first" ist nichts zu tun.
+  g++ -c -pipe -std=gnu++1z -ggdb -g -Wall -W -D_REENTRANT -fPIC -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/arm-linux-gnueabihf/qt5 -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWidgets -isystem /usr/include/arm-linux-gnueabihf/qt5/QtGui -isystem /usr/include/arm-linux-gnueabihf/qt5/QtCore -IDebug -IDebug -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -o Debug/MainWindow.o MainWindow.cpp
+  c:\projects\uGolf\Filter.h(2):
+  c:\projects\uGolf\MainWindow.h(7):
+  c:\projects\uGolf\MainWindow.cpp(1):
+c:\projects\uGolf\SerialManager.h(14,12): warning : 'uartFd' defined but not used [-Wunused-variable]
+   static int uartFd = -1;
+              ^~~~~~
+  g++  -o Debug/uGolf Debug/DataManager.o Debug/Filter.o Debug/SerialManager.o Debug/uGolf.o Debug/MainWindow.o Debug/moc_MainWindow.o   -lQt5Widgets -lQt5Gui -lQt5Core -lGLESv2 -lpthread -latomic 
   Downloading generated headers from /tmp/VisualGDB/c/projects/uGolf/Debug...

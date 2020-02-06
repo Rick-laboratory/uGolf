@@ -20,9 +20,6 @@
 #ifndef __cpp_attributes
 #define __cpp_attributes 200809
 #endif
-#ifndef __cpp_nontype_template_parameter_auto
-#define __cpp_nontype_template_parameter_auto 201606
-#endif
 #ifndef __UINT_LEAST16_MAX__
 #define __UINT_LEAST16_MAX__ 0xffff
 #endif
@@ -81,7 +78,7 @@
 #define __FLT32_MIN_EXP__ (-125)
 #endif
 #ifndef __cpp_static_assert
-#define __cpp_static_assert 201411
+#define __cpp_static_assert 200410
 #endif
 #ifndef __USFRACT_FBIT__
 #define __USFRACT_FBIT__ 8
@@ -122,9 +119,6 @@
 #ifndef __FLT_EVAL_METHOD__
 #define __FLT_EVAL_METHOD__ 0
 #endif
-#ifndef __cpp_enumerator_attributes
-#define __cpp_enumerator_attributes 201411
-#endif
 #ifndef __unix__
 #define __unix__ 1
 #endif
@@ -136,9 +130,6 @@
 #endif
 #ifndef __FLT64_DECIMAL_DIG__
 #define __FLT64_DECIMAL_DIG__ 17
-#endif
-#ifndef __cpp_noexcept_function_type
-#define __cpp_noexcept_function_type 201510
 #endif
 #ifndef __GCC_ATOMIC_CHAR32_T_LOCK_FREE
 #define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
@@ -188,26 +179,17 @@
 #ifndef __UINT_FAST8_MAX__
 #define __UINT_FAST8_MAX__ 0xff
 #endif
-#ifndef __FLT32_MAX_10_EXP__
-#define __FLT32_MAX_10_EXP__ 38
-#endif
 #ifndef __DEC64_MAX_EXP__
 #define __DEC64_MAX_EXP__ 385
 #endif
 #ifndef __INT_LEAST8_WIDTH__
 #define __INT_LEAST8_WIDTH__ 8
 #endif
-#ifndef __cpp_variadic_using
-#define __cpp_variadic_using 201611
-#endif
 #ifndef __UINT_LEAST64_MAX__
 #define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
 #endif
 #ifndef __SA_FBIT__
 #define __SA_FBIT__ 15
-#endif
-#ifndef __cpp_capture_star_this
-#define __cpp_capture_star_this 201603
 #endif
 #ifndef __SHRT_MAX__
 #define __SHRT_MAX__ 0x7fff
@@ -218,14 +200,14 @@
 #ifndef __FRACT_MAX__
 #define __FRACT_MAX__ 0X7FFFP-15R
 #endif
-#ifndef __cpp_if_constexpr
-#define __cpp_if_constexpr 201606
-#endif
 #ifndef __UFRACT_FBIT__
 #define __UFRACT_FBIT__ 16
 #endif
 #ifndef __ARM_FP
 #define __ARM_FP 12
+#endif
+#ifndef QT_NO_DEBUG
+#define QT_NO_DEBUG 1
 #endif
 #ifndef __UFRACT_MIN__
 #define __UFRACT_MIN__ 0.0UR
@@ -250,6 +232,9 @@
 #endif
 #ifndef __FLT_EVAL_METHOD_TS_18661_3__
 #define __FLT_EVAL_METHOD_TS_18661_3__ 0
+#endif
+#ifndef __OPTIMIZE__
+#define __OPTIMIZE__ 1
 #endif
 #ifndef __CHAR_UNSIGNED__
 #define __CHAR_UNSIGNED__ 1
@@ -307,9 +292,6 @@
 #endif
 #ifndef __USACCUM_IBIT__
 #define __USACCUM_IBIT__ 8
-#endif
-#ifndef __cpp_aligned_new
-#define __cpp_aligned_new 201606
 #endif
 #ifndef __USER_LABEL_PREFIX__
 #define __USER_LABEL_PREFIX__ 
@@ -485,12 +467,6 @@
 #ifndef __DBL_HAS_INFINITY__
 #define __DBL_HAS_INFINITY__ 1
 #endif
-#ifndef __cpp_deduction_guides
-#define __cpp_deduction_guides 201611
-#endif
-#ifndef __cpp_fold_expressions
-#define __cpp_fold_expressions 201603
-#endif
 #ifndef __ACCUM_IBIT__
 #define __ACCUM_IBIT__ 16
 #endif
@@ -524,7 +500,7 @@
 //VS2005-2012 treats all files as C++, while VS2013+ can treat C files correctly.
 #if defined(_MSC_VER) && (_MSC_VER < 1800 || defined(__cplusplus))
 #undef __cplusplus
-#define __cplusplus 201703L
+#define __cplusplus 201402L
 #endif
 #ifndef __cpp_ref_qualifiers
 #define __cpp_ref_qualifiers 200710
@@ -619,9 +595,6 @@
 #ifndef __cpp_hex_float
 #define __cpp_hex_float 201603
 #endif
-#ifndef __GCC_HAVE_DWARF2_CFI_ASM
-#define __GCC_HAVE_DWARF2_CFI_ASM 1
-#endif
 #ifndef __GXX_ABI_VERSION
 #define __GXX_ABI_VERSION 1013
 #endif
@@ -697,9 +670,6 @@
 #ifndef __UHA_FBIT__
 #define __UHA_FBIT__ 8
 #endif
-#ifndef __NO_INLINE__
-#define __NO_INLINE__ 1
-#endif
 #ifndef __SFRACT_MIN__
 #define __SFRACT_MIN__ (-0.5HR-0.5HR)
 #endif
@@ -719,7 +689,7 @@
 #define __ULLFRACT_FBIT__ 64
 #endif
 #ifndef __cpp_unicode_characters
-#define __cpp_unicode_characters 201411
+#define __cpp_unicode_characters 200704
 #endif
 #ifndef __FRACT_EPSILON__
 #define __FRACT_EPSILON__ 0x1P-15R
@@ -751,9 +721,6 @@
 #ifndef __USFRACT_MIN__
 #define __USFRACT_MIN__ 0.0UHR
 #endif
-#ifndef __cpp_aggregate_bases
-#define __cpp_aggregate_bases 201603
-#endif
 #ifndef __ULLACCUM_IBIT__
 #define __ULLACCUM_IBIT__ 32
 #endif
@@ -781,8 +748,8 @@
 #ifndef __LLACCUM_FBIT__
 #define __LLACCUM_FBIT__ 31
 #endif
-#ifndef __cpp_nested_namespace_definitions
-#define __cpp_nested_namespace_definitions 201411
+#ifndef __FLT32_MAX_10_EXP__
+#define __FLT32_MAX_10_EXP__ 38
 #endif
 #ifndef __INT_FAST32_TYPE__
 #define __INT_FAST32_TYPE__ int
@@ -961,9 +928,6 @@
 #ifndef __INT_LEAST8_TYPE__
 #define __INT_LEAST8_TYPE__ signed char
 #endif
-#ifndef __cpp_structured_bindings
-#define __cpp_structured_bindings 201606
-#endif
 #ifndef __SQ_FBIT__
 #define __SQ_FBIT__ 31
 #endif
@@ -985,9 +949,6 @@
 #ifndef __cpp_sized_deallocation
 #define __cpp_sized_deallocation 201309
 #endif
-#ifndef __cpp_guaranteed_copy_elision
-#define __cpp_guaranteed_copy_elision 201606
-#endif
 #ifndef __QQ_FBIT__
 #define __QQ_FBIT__ 7
 #endif
@@ -995,7 +956,7 @@
 #define linux 1
 #endif
 #ifndef __cpp_range_based_for
-#define __cpp_range_based_for 201603
+#define __cpp_range_based_for 200907
 #endif
 #ifndef __UTA_IBIT__
 #define __UTA_IBIT__ 64
@@ -1024,14 +985,8 @@
 #ifndef __FLT64_HAS_INFINITY__
 #define __FLT64_HAS_INFINITY__ 1
 #endif
-#ifndef __STDCPP_DEFAULT_NEW_ALIGNMENT__
-#define __STDCPP_DEFAULT_NEW_ALIGNMENT__ 8
-#endif
 #ifndef __SIG_ATOMIC_MIN__
 #define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
-#endif
-#ifndef __cpp_nontype_template_args
-#define __cpp_nontype_template_args 201411
 #endif
 #ifndef __cpp_return_type_deduction
 #define __cpp_return_type_deduction 201304
@@ -1080,9 +1035,6 @@
 #endif
 #ifndef __UINT_FAST64_TYPE__
 #define __UINT_FAST64_TYPE__ long long unsigned int
-#endif
-#ifndef __cpp_inline_variables
-#define __cpp_inline_variables 201606
 #endif
 #ifndef __INT_MAX__
 #define __INT_MAX__ 0x7fffffff
@@ -1146,9 +1098,6 @@
 #endif
 #ifndef __WINT_WIDTH__
 #define __WINT_WIDTH__ 32
-#endif
-#ifndef __cpp_template_auto
-#define __cpp_template_auto 201606
 #endif
 #ifndef __INT_LEAST8_MAX__
 #define __INT_LEAST8_MAX__ 0x7f
@@ -1240,9 +1189,6 @@
 #ifndef __UINT64_TYPE__
 #define __UINT64_TYPE__ long long unsigned int
 #endif
-#ifndef __cpp_namespace_attributes
-#define __cpp_namespace_attributes 201411
-#endif
 #ifndef __ACCUM_EPSILON__
 #define __ACCUM_EPSILON__ 0x1P-15K
 #endif
@@ -1273,9 +1219,6 @@
 #ifndef __UINT_FAST32_TYPE__
 #define __UINT_FAST32_TYPE__ unsigned int
 #endif
-#ifndef QT_SERIALPORT_LIB
-#define QT_SERIALPORT_LIB 1
-#endif
 #ifndef __CHAR32_TYPE__
 #define __CHAR32_TYPE__ unsigned int
 #endif
@@ -1283,7 +1226,7 @@
 #define __FLT_MAX__ 3.4028234663852886e+38F
 #endif
 #ifndef __cpp_constexpr
-#define __cpp_constexpr 201603
+#define __cpp_constexpr 201304
 #endif
 #ifndef __USACCUM_FBIT__
 #define __USACCUM_FBIT__ 8
@@ -1338,9 +1281,6 @@
 #endif
 #ifndef __HA_FBIT__
 #define __HA_FBIT__ 7
-#endif
-#ifndef __cpp_template_template_args
-#define __cpp_template_template_args 201611
 #endif
 #ifndef __DBL_MAX_10_EXP__
 #define __DBL_MAX_10_EXP__ 308
@@ -1456,6 +1396,9 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
+#ifndef DEBUG
+#define DEBUG 1
+#endif
 #endif
 
 // --- Include directories begin --- //
@@ -1464,7 +1407,6 @@
 ///usr/include/arm-linux-gnueabihf/qt5
 ///usr/include/arm-linux-gnueabihf/qt5/QtWidgets
 ///usr/include/arm-linux-gnueabihf/qt5/QtGui
-///usr/include/arm-linux-gnueabihf/qt5/QtSerialPort
 ///usr/include/arm-linux-gnueabihf/qt5/QtCore
 ///usr/include/c++/8
 ///usr/include/arm-linux-gnueabihf/c++/8

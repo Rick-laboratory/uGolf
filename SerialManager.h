@@ -9,7 +9,8 @@
 #include <string.h>
 #include <string>
 #include <iostream>
-#include <vector>
+#include <sstream>
+#include <fstream>
 static int uartFd = -1; 
 struct Serial
 {
@@ -19,7 +20,4 @@ struct Serial
 	static void uart_write(void* data, size_t len);
 	static ssize_t uart_read(void* buffer, size_t charsToRead);
 	static int uart_open(const char* port, int baud, int blocking);
-	static const std::string uart_collect();
-	static const std::string return_GNGGA();
-	//static DataTuple test(std::string text);
 };

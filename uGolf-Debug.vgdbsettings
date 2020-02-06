@@ -33,14 +33,8 @@
       </FileMasks>
       <TransferNewFilesOnly>true</TransferNewFilesOnly>
       <IncludeSubdirectories>true</IncludeSubdirectories>
-      <SelectedDirectories />
       <DeleteDisappearedFiles>true</DeleteDisappearedFiles>
       <ApplyGlobalExclusionList>true</ApplyGlobalExclusionList>
-      <Extension>
-        <Direction>Outgoing</Direction>
-        <SkipMountPoints>false</SkipMountPoints>
-        <OverwriteTrigger>LocalCache</OverwriteTrigger>
-      </Extension>
     </MainSourceTransferCommand>
     <AllowChangingHostForMainCommands>false</AllowChangingHostForMainCommands>
     <SkipBuildIfNoSourceFilesChanged>false</SkipBuildIfNoSourceFilesChanged>
@@ -80,7 +74,6 @@
       <WorkingDirectory>$(BuildDir)</WorkingDirectory>
       <Environment>
         <Records />
-        <EnvironmentSetupFiles />
       </Environment>
       <BackgroundMode xsi:nil="true" />
     </QMakeCommand>
@@ -109,7 +102,6 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
-  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -122,8 +114,6 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
-  <Configurations />
-  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.remote">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>

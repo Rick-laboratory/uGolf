@@ -4,16 +4,12 @@
 #include <QMainWindow>
 #include <string>
 #include "DataManager.h"
-#include "SerialManager.h"
+#include "Filter.h"
 #include <QMessageBox>
 #include <QDebug>
 #include <iostream>
 #include <string>
-struct CountData
-{
-	int ReferenceCount = 0;
-	int IndexCount = 0;
-};
+#include <fstream>
 
 namespace Ui {
 	class MainWindow;
@@ -32,14 +28,26 @@ public :
 	void on_AqcuireTargetPosition_clicked();
 	void on_AqcuireCurrentBallPosition_clicked();
 	void on_FinishedHole_clicked();
+	void setIndexUp();
+	int getIndexCount();
+	void setReferenceUp();
+	int getReferenceCount();
+	bool fexists(const std::string& filename) {
+		std::ifstream ifile(filename.c_str());
+		return (bool)ifile;
+	}
+	
 	
 private:
 	Ui::MainWindow *ui;
 	int ReferenceCount = 0;
 	int IndexCount = 0;
 	DataManager DataManagerObject;
+	Filter FilterObject;
 	//SerialManager SerialManagerObject;
-	//SerialManager SerialManagerObject;
+	std::string TempGPS;
+	std::string TempFinish;
+	QString TempQstr;
 };
 
 #endif // MAINWINDOW_H

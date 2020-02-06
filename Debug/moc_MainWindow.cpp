@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[6];
-    char stringdata0[141];
+    QByteArrayData data[13];
+    char stringdata0[228];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,13 +36,23 @@ QT_MOC_LITERAL(1, 11, 33), // "on_AqcuireInitialPosition_cli..."
 QT_MOC_LITERAL(2, 45, 0), // ""
 QT_MOC_LITERAL(3, 46, 32), // "on_AqcuireTargetPosition_clicked"
 QT_MOC_LITERAL(4, 79, 37), // "on_AqcuireCurrentBallPosition..."
-QT_MOC_LITERAL(5, 117, 23) // "on_FinishedHole_clicked"
+QT_MOC_LITERAL(5, 117, 23), // "on_FinishedHole_clicked"
+QT_MOC_LITERAL(6, 141, 10), // "setIndexUp"
+QT_MOC_LITERAL(7, 152, 13), // "getIndexCount"
+QT_MOC_LITERAL(8, 166, 14), // "setReferenceUp"
+QT_MOC_LITERAL(9, 181, 17), // "getReferenceCount"
+QT_MOC_LITERAL(10, 199, 7), // "fexists"
+QT_MOC_LITERAL(11, 207, 11), // "std::string"
+QT_MOC_LITERAL(12, 219, 8) // "filename"
 
     },
     "MainWindow\0on_AqcuireInitialPosition_clicked\0"
     "\0on_AqcuireTargetPosition_clicked\0"
     "on_AqcuireCurrentBallPosition_clicked\0"
-    "on_FinishedHole_clicked"
+    "on_FinishedHole_clicked\0setIndexUp\0"
+    "getIndexCount\0setReferenceUp\0"
+    "getReferenceCount\0fexists\0std::string\0"
+    "filename"
 };
 #undef QT_MOC_LITERAL
 
@@ -52,7 +62,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -60,16 +70,26 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x09 /* Protected */,
-       3,    0,   35,    2, 0x09 /* Protected */,
-       4,    0,   36,    2, 0x09 /* Protected */,
-       5,    0,   37,    2, 0x09 /* Protected */,
+       1,    0,   59,    2, 0x09 /* Protected */,
+       3,    0,   60,    2, 0x09 /* Protected */,
+       4,    0,   61,    2, 0x09 /* Protected */,
+       5,    0,   62,    2, 0x09 /* Protected */,
+       6,    0,   63,    2, 0x09 /* Protected */,
+       7,    0,   64,    2, 0x09 /* Protected */,
+       8,    0,   65,    2, 0x09 /* Protected */,
+       9,    0,   66,    2, 0x09 /* Protected */,
+      10,    1,   67,    2, 0x09 /* Protected */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Int,
+    QMetaType::Void,
+    QMetaType::Int,
+    QMetaType::Bool, 0x80000000 | 11,   12,
 
        0        // eod
 };
@@ -84,10 +104,17 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->on_AqcuireTargetPosition_clicked(); break;
         case 2: _t->on_AqcuireCurrentBallPosition_clicked(); break;
         case 3: _t->on_FinishedHole_clicked(); break;
+        case 4: _t->setIndexUp(); break;
+        case 5: { int _r = _t->getIndexCount();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 6: _t->setReferenceUp(); break;
+        case 7: { int _r = _t->getReferenceCount();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 8: { bool _r = _t->fexists((*reinterpret_cast< const std::string(*)>(_a[1])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = {
@@ -115,13 +142,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 9)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 9;
     }
     return _id;
 }
