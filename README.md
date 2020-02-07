@@ -1,3 +1,4 @@
+#Author: Rick Armbruster
 # uGolf
 uGolf Development
 
