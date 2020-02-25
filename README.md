@@ -1,7 +1,7 @@
 #Author: Rick Armbruster
 # uGolf
 uGolf Development
-
+# 25.02.2020 new Update in Sight. Pretaste http://u.cubeupload.com/GreatBullet/vorgeschmack.png
 Serial Communication over UART[B9600] Between the Pi and the M8P-2-11 Works like a charm and is implementet within the SerialManager Class.<br>
 Basic Data management Functionality has been implemented within the DataManager Class.<br>
 <br>
