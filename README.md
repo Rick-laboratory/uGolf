@@ -4,6 +4,8 @@ uGolf Development
 # 25.02.2020 new Update in Sight. 
 Pretaste http://u.cubeupload.com/GreatBullet/vorgeschmack.png
 # 26.02.2020 Dependency Injection Concerns in Mind
+Although it happened that i already used it somewhere in the past i got a serious hint about its usefullness on a great Interview today.
+As my programming is a Target of Improovement, i appreciate it alot. Lets move on.
 
 Serial Communication over UART[B9600] Between the Pi and the M8P-2-11 Works like a charm and is implementet within the SerialManager Class.<br>
 Basic Data management Functionality has been implemented within the DataManager Class.<br>
