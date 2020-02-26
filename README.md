@@ -4,9 +4,9 @@ uGolf Development
 # 25.02.2020 new Update in Sight. 
 Pretaste http://u.cubeupload.com/GreatBullet/vorgeschmack.png
 # 26.02.2020 Dependency Injection Concerns in Mind
-Although it happened that i already used it somewhere in the past i got a serious hint about its usefullness on a great Interview today.
-As my programming is a Target of Improovement, i appreciate it alot. 
-Lets move on. 
+Although it happened that i already used it somewhere in the past i got a serious hint about its usefullness on a great Interview today.<br>
+As my programming is a Target of Improovement, i appreciate it alot. <br>
+Lets move on. <br>
 The Approach i have in Mind will be the Constructor DI
 
 # Furthermore Implementation Details, subject to change for an improoving Experience.
