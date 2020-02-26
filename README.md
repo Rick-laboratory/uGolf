@@ -9,7 +9,7 @@ As my programming is a Target of Improovement, i appreciate it alot.
 Lets move on. 
 The Approach i have in Mind will be the Constructor DI
 
-#Furthermore Implementation Details, subject to change for an improoving Experience.
+# Furthermore Implementation Details, subject to change for an improoving Experience.
 Serial Communication over UART[B9600] Between the Pi and the M8P-2-11 Works like a charm and is implementet within the SerialManager Class.<br>
 Basic Data management Functionality has been implemented within the DataManager Class.<br>
 <br>
