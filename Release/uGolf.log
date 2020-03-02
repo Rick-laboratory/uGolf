@@ -1,5 +1,0 @@
-﻿EXEC : warning : Stderr line received 'tar: Debug: Zeitstempel 2020-02-06 17:02:24 liegt 3598.645039056 Sekunden in der Zukunft.'
-  VisualGDB: c:\projects\uGolf => /tmp/VisualGDB/c/projects/uGolf: 18 files copied (106KB). (1 warnings)
-VisualGDB : error : Source file transfer failed. If you want to build your project nonetheless, edit project properties to ignore transfer errors.
-VisualGDB : error : Build has failed. See the Output window for more details.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): error MSB3073: Der Befehl ""C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "c:\projects\uGolf\uGolf.vcxproj" "/solution:c:\projects\uGolf\uGolf.sln"  "/config:Release" "/platform:Win32"" wurde mit dem Code 1 beendet.
