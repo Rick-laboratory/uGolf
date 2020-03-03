@@ -15,7 +15,7 @@ Refactorisation of Code has been done, it should seem Selfexplainatory now. <br>
 Some people even tried to accuse me i would be wrong when i talked about it, maybe some C# or Java Devs i guess.
 Its called RAM for a Reason was my answer to this, and allocating Memory within the logical Part of Software is not the way to go if you want a smooth Transition from Procedure to Procedure.<br>
 https://www.embedded.com/how-to-make-c-more-real-time-friendly/ <br>
-An Implementation will follow. As the Code of uGolf consists of alot of Allocations within the Logical Part.
+An Implementation will follow, because the Code of uGolf consists of alot of Allocations within the Logical Part.
 
 
 # Furthermore Implementation Details, subject to change for an improoving experience.
