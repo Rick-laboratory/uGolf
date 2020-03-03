@@ -12,11 +12,12 @@ The Approach i have in Mind will be the Constructor DI
 # 02.03.2020 Update Time
 Refactorisation of Code has been done, it should seem selfexplainatory now. <br>
 # 03.03.2020 A noteworthy Article which explains some of my Ideas of allocating everything upfront in RealTimeCritical Enviroments
-Some people even tried to accuse me i would be wrong when i talked about it, maybe some C# or Java Devs i guess.
-(No offense, just Rational because of the managed Aspects of those Languages).
+Some people even tried to accuse me i would be wrong when i talked about it, maybe some C# or Java Devs i guess.<br>
+(No offense, just Rational because of the managed Aspects of those Languages).<br>
 Its called RAM for a Reason was my answer to this, and allocating Memory within the logical Part of Software is not the way to go if you want a smooth Transition from Procedure to Procedure.<br>
 https://www.embedded.com/how-to-make-c-more-real-time-friendly/ <br>
 An Implementation will follow, because the Code of uGolf consists of alot of Allocations within the Logical Part.<br>
+For the simple Reason of limited Time.
 Translation for the UI will follow too but, its a Minor Concern.
 
 
