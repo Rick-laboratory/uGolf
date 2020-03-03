@@ -9,6 +9,14 @@ Although it happened that i already used it somewhere in the past i got a seriou
 As my programming is a Target of Improovement, i appreciate it alot. <br>
 Lets move on. <br>
 The Approach i have in Mind will be the Constructor DI
+# 02.03.2020 Update Time
+Refactorisation of Code has been done, it should seem Selfexplainatory now. <br>
+# 03.03.2020 A noteworthy Article which explains some of my Ideas of allocating everything upfront in RealTimeCritical Enviroments
+# Some people even tried to accuse me i would be wrong when i talked about it, maybe some C# or Java Devs i guess.
+# Its called RAM for a Reason was my answer to this, and allocating Memory within the logical Part of Software is not the way to go if you want a smooth Transition from Procedure to Procedure.
+https://www.embedded.com/how-to-make-c-more-real-time-friendly/
+An Implementation will follow. As the Code of uGolf consists of alot of Allocations within the Logical Part.
+
 
 # Furthermore Implementation Details, subject to change for an improoving experience.
 Serial Communication over UART[B9600] Between the Pi and the M8P-2-11 Works like a charm and is implementet within the SerialManager Class.<br>
