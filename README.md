@@ -1,6 +1,7 @@
 #Author: Rick Armbruster
 # uGolf
 uGolf Development
+![Image description](https://cubeupload.com/im/GreatBullet/Thumbnail.png)
 # 25.02.2020 new Update in Sight. 
 Pretaste http://u.cubeupload.com/GreatBullet/vorgeschmack.png
 # 26.02.2020 Dependency Injection Concerns in Mind
